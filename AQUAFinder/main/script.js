@@ -59,11 +59,11 @@ map.on("popupopen", function (e) {
 // Adds functionality to all the buttons on the bottom left
 document.addEventListener("DOMContentLoaded", function () {
     // The about button is also the clickable image
-    const aboutButton = document.getElementById("about-button") || document.querySelector('.clickable-img');
+    const aboutButton = document.getElementById("about-button") || document.querySelector('.about-btn');
 
     if (aboutButton) {
         aboutButton.addEventListener("click", function () {
-            globalThis.location.href = "about.html";
+            globalThis.location.href = "../about/about.html";
         });
     } else {
         console.error("About button/clickable image not found.");
