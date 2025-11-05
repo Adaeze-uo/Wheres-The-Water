@@ -1,0 +1,32 @@
+#map {position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
+.fountain-button {
+    /* Add your button styles here */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+}
+
+.fountain-button:hover {
+    background-color: #45a049;
+}
+
+.clickable-img {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 1000;
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 80px;
+    max-height: 80px;
+    object-fit: contain;
+    background: transparent;
+    border: none;
+    padding: 0;
+}

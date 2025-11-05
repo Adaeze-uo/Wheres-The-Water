@@ -1,29 +1,18 @@
 // In your JavaScript file
-function generateFountainList(building) {
-    let fountainList = `<h3>${building.name}</h3><h4>Water Fountains:</h4><div id="fountain-list">`;
-    
-    building.fountains.forEach((fountain, index) => {
-        fountainList += `<button class="fountain-button" data-index="${index}" data-building="${building.name}">
-                            ${fountain.description}
-                         </button><br>`;
-    });
-
-    fountainList += '</div>';
-    return fountainList;
-}
+// Removed duplicate generateFountainList definition.
 
 // Loop through each building and add markers
-buildings.forEach(function (building) {
-    let marker = L.marker([building.lat, building.lng])
+for (const building of buildings) {
+    L.marker([building.lat, building.lng])
         .addTo(map)
         .bindPopup(generateFountainList(building));
-});
+}
 
 // Function to generate fountain list in popups
 function generateFountainList(building) {
     let fountainList = `<h3>${building.name}</h3><h4>Water Fountains:</h4>`;
     
-    building.fountains.forEach((fountain, index) => {
+    for (const [, fountain] of building.fountains.entries()) {
         fountainList += `<button class="fountain-button" 
                             data-lat="${building.lat}" 
                             data-lng="${building.lng}" 
@@ -31,7 +20,7 @@ function generateFountainList(building) {
                             data-tags="${fountain.tags.join(',')}">
                             ${fountain.description}
                          </button><br>`;
-    });
+    }
 
     return fountainList;
 }
@@ -43,12 +32,12 @@ map.on("popupopen", function (e) {
 
     let buttons = popupContent.querySelectorAll(".fountain-button");
 
-    buttons.forEach((button) => {
+    for (const button of buttons) {
         button.addEventListener("click", function () {
-            let lat = parseFloat(this.getAttribute("data-lat"));
-            let lng = parseFloat(this.getAttribute("data-lng"));
-            let description = this.getAttribute("data-description");
-            let tags = this.getAttribute("data-tags").split(",");
+            let lat = Number.parseFloat(this.dataset.lat);
+            let lng = Number.parseFloat(this.dataset.lng);
+            let description = this.dataset.description;
+            let tags = this.dataset.tags.split(",");
 
             let isFunctional = tags[0] === "TRUE";
             let fountainType = tags[1];
@@ -63,22 +52,22 @@ map.on("popupopen", function (e) {
                 )
                 .openOn(map);
         });
-    });
+    }
 });
 
 
 // Adds functionality to all the buttons on the bottom left
 document.addEventListener("DOMContentLoaded", function () {
-    let aboutButton = document.getElementById("about-button");
+    // The about button is also the clickable image
+    const aboutButton = document.getElementById("about-button") || document.querySelector('.clickable-img');
 
     if (aboutButton) {
         aboutButton.addEventListener("click", function () {
-            window.location.href = "about.html";
+            globalThis.location.href = "about.html";
         });
     } else {
-        console.error("About button not found.");
+        console.error("About button/clickable image not found.");
     }
-
 });
 
 

@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Where's the Water | Main Page</title>
-    <style>
-        #map { position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
-    </style>
 </head>
 
 <body>
@@ -188,43 +185,37 @@
 
 
     // Loop through each building and add markers
-    buildings.forEach(function (building, index) {
-    let fountainList = `<h3>${building.name}</h3><h4>Water Fountains:</h4><div id="fountain-list">`;
-    building.fountains.forEach(function (fountain) {
-        fountainList += `<button class="fountain-button" 
-                          data-building="${building.name}" 
-                          data-lat="${building.lat}" 
-                          data-lng="${building.lng}" 
-                          data-description="${fountain.description}" 
-                          data-tags="${fountain.tags.join(',')}">
-                          ${fountain.description}
-                         </button><br>`;
-    });
-    fountainList += "</div>";
+    let index = 0;
+    for (const building of buildings) {
+        let fountainList = `<h3>${building.name}</h3><h4>Water Fountains:</h4><div id="fountain-list">`;
+        for (const fountain of building.fountains) {
+            fountainList += `<button class="fountain-button" 
+                              data-building="${building.name}" 
+                              data-lat="${building.lat}" 
+                              data-lng="${building.lng}" 
+                              data-description="${fountain.description}" 
+                              data-tags="${fountain.tags.join(',')}">
+                              ${fountain.description}
+                             </button><br>`;
+        }
+        fountainList += "</div>";
 
-    // Create marker and bind popup
-    let buildingMarker = L.marker([building.lat, building.lng])
-        .addTo(map)
-        .bindPopup(fountainList);
+        // Create marker and bind popup
+        let buildingMarker = L.marker([building.lat, building.lng])
+            .addTo(map)
+            .bindPopup(fountainList);
 
-    // Center the map on the first building
-    if (index === 0) {
-        map.setView(buildingMarker.getLatLng(), 16);
+        // Center the map on the first building
+        if (index === 0) {
+            map.setView(buildingMarker.getLatLng(), 16);
+        }
+        index++;
     }
-    });
     </script>
     
-    <div id="hover-bar" style="position: fixed;
-    bottom: 10px;
-    left: 10px;
-    background-color: #f1f1f1;
-    padding: 10px;
-    z-index: 1000;
-    display: flex;
-    gap: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);">
-    </div>
+    <button class="clickable-img" id="about-btn" tabindex="0" aria-label="About button">
+        <img src="../assets/about-btn.png" alt="About button">
+    </button>
     
     <script src="script.js"></script>
 </body>
