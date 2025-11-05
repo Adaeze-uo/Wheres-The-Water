@@ -70,8 +70,6 @@ map.on("popupopen", function (e) {
 // Adds functionality to all the buttons on the bottom left
 document.addEventListener("DOMContentLoaded", function () {
     let aboutButton = document.getElementById("about-button");
-    let contributeButton = document.getElementById("contribute-button");
-    let reportButton = document.getElementById("report-button");
 
     if (aboutButton) {
         aboutButton.addEventListener("click", function () {
@@ -81,21 +79,6 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("About button not found.");
     }
 
-    if (contributeButton) {
-        contributeButton.addEventListener("click", function () {
-            window.location.href = "contribute.html";
-        });
-    } else {
-        console.error("Contribute button not found.");
-    }
-
-    if (reportButton) {
-        reportButton.addEventListener("click", function () {
-            window.location.href = "report.html";
-        });
-    } else {
-        console.error("Report button not found.");
-    }
 });
 
 
