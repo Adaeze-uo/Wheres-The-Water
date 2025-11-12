@@ -1,0 +1,160 @@
+[
+  {
+    "name": "Agriculture",
+    "lat": 51.43848,
+    "lng": -0.935978,
+    "fountains": [
+      { "description": "Lower Ground Floor - GL10", "tags": ["FALSE", "Wall"] },
+      { "description": "Lower Ground Floor - GL15", "tags": ["FALSE", "Wall"] },
+      { "description": "1st Floor - R1L01", "tags": ["FALSE", "Wall"] },
+      { "description": "2nd Floor - TF2", "tags": ["FALSE", "Wall"] }
+    ]
+  },
+  {
+    "name": "Chancellors",
+    "lat": 51.440253,
+    "lng": -0.950017,
+    "fountains": [
+      { "description": "Ground Floor - TF1", "tags": ["FALSE", "Plug-In"] },
+      { "description": "1st Floor - TF2", "tags": ["FALSE", "Plug-In"] }
+    ]
+  },
+  {
+    "name": "Chem and Pharm",
+    "lat": 51.438788,
+    "lng": -0.942888,
+    "fountains": [
+      { "description": "Ground Floor - LTG", "tags": ["FALSE", "Wall"] },
+      { "description": "Ground Floor - LTG", "tags": ["FALSE", "Room"] },
+      { "description": "1st Floor - 158", "tags": ["FALSE", "Wall"] },
+      { "description": "2nd Floor - 258", "tags": ["FALSE", "Wall"] }
+    ]
+  },
+  {
+    "name": "Edith Morley",
+    "lat": 51.441085,
+    "lng": -0.94609,
+    "fountains": [
+      { "description": "Ground Floor - TFG09", "tags": ["TRUE", "Room"] },
+      { "description": "Ground Floor - TG08", "tags": ["TRUE", "Room"] },
+      { "description": "Ground Floor - TG07", "tags": ["TRUE", "Room"] },
+      { "description": "Ground Floor - TFG03", "tags": ["TRUE", "Room"] },
+      { "description": "Ground Floor - TFG01", "tags": ["TRUE", "Room"] },
+      { "description": "2nd Floor - 219", "tags": ["TRUE", "Room"] },
+      { "description": "2nd Floor - 250", "tags": ["TRUE", "Room"] },
+      { "description": "2nd Floor - 255", "tags": ["TRUE", "Room"] },
+      { "description": "1st Floor - 155", "tags": ["TRUE", "Room"] },
+      { "description": "1st Floor - C104", "tags": ["TRUE", "Room"] },
+      { "description": "1st Floor - TF103", "tags": ["TRUE", "Room"] },
+      { "description": "1st Floor - TF010", "tags": ["TRUE", "Room"] }
+    ]
+  },
+  {
+    "name": "Henley Business School",
+    "lat": 51.442062,
+    "lng": -0.946198,
+    "fountains": [
+      { "description": "Ground Floor - TDG01", "tags": ["FALSE", "Wall"] }
+    ]
+  },
+  {
+    "name": "JJ Thomson",
+    "lat": 51.438965,
+    "lng": -0.944417,
+    "fountains": [
+      { "description": "2nd Floor - 258", "tags": ["FALSE", "Room"] }
+    ]
+  },
+  {
+    "name": "Math and Stats",
+    "lat": 51.438534,
+    "lng": -0.944068,
+    "fountains": [
+      { "description": "Ground Floor - G05", "tags": ["FALSE", "Wall"] },
+      { "description": "Ground Floor - G05", "tags": ["FALSE", "Plug-In"] },
+      { "description": "1st Floor - 106", "tags": ["FALSE", "Plug-In"] },
+      { "description": "2nd Floor - 207", "tags": ["FALSE", "Plug-In"] },
+      { "description": "3rd Floor - 306", "tags": ["FALSE", "Plug-In"] }
+    ]
+  },
+  {
+    "name": "Meteorology",
+    "lat": 51.438704,
+    "lng": -0.936992,
+    "fountains": [
+      { "description": "Lower Ground Floor - GL69", "tags": ["FALSE", "Wall"] },
+      { "description": "1st Floor - 1L46", "tags": ["FALSE", "Room"] },
+      { "description": "2nd Floor - 2L31", "tags": ["FALSE", "Wall"] },
+      { "description": "3rd Floor - 3L32", "tags": ["FALSE", "Wall"] }
+    ]
+  },
+  {
+    "name": "Minghella",
+    "lat": 51.44169,
+    "lng": -0.945162,
+    "fountains": [
+      { "description": "Ground Floor - GO8", "tags": ["FALSE", "Plug-In"] }
+    ]
+  },
+  {
+    "name": "Palmer",
+    "lat": 51.441366,
+    "lng": -0.94432,
+    "fountains": [
+      { "description": "Ground Floor - Lobby", "tags": ["FALSE", "Wall"] }
+    ]
+  },
+  {
+    "name": "Polly Vancher",
+    "lat": 51.438039,
+    "lng": -0.944551,
+    "fountains": [
+      { "description": "Ground Floor - G49", "tags": ["FALSE", "Plug-In"] }
+    ]
+  },
+  {
+    "name": "Psychology",
+    "lat": 51.439427,
+    "lng": -0.936241,
+    "fountains": [
+      { "description": "1st Floor, Reception", "tags": ["FALSE", "Plug-In"] },
+      { "description": "2nd Floor, 264", "tags": ["FALSE", "Wall"] },
+      { "description": "2nd Floor, 225", "tags": ["FALSE", "Room"] },
+      { "description": "1st Floor, 173", "tags": ["FALSE", "Room"] }
+    ]
+  },
+  {
+    "name": "Russell",
+    "lat": 51.439557,
+    "lng": -0.949287,
+    "fountains": [
+      { "description": "1st Floor - 1.15", "tags": ["FALSE", "Wall"] }
+    ]
+  },
+  {
+    "name": "Student's Union",
+    "lat": 51.440607,
+    "lng": -0.94336,
+    "fountains": [
+      { "description": "Lower Ground Floor, 3sixty", "tags": ["FALSE", "Wall"] },
+      { "description": "Ground Floor, Main corridor", "tags": ["FALSE", "Wall"] }
+    ]
+  },
+  {
+    "name": "Library",
+    "lat": 51.440012,
+    "lng": -0.944872,
+    "fountains": [
+      { "description": "Ground Floor - Cafe", "tags": ["FALSE", "Wall"] },
+      { "description": "1st Floor - Laptop Area", "tags": ["FALSE", "Wall"] }
+    ]
+  },
+  {
+    "name": "Whiteknights House",
+    "lat": 51.44061,
+    "lng": -0.947136,
+    "fountains": [
+      { "description": "Ground Floor, G.20", "tags": ["FALSE", "Plug-In"] }
+    ]
+  }
+]

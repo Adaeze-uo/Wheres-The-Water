@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Colored status text */
+.status-green {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.status-yellow {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.status-red {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Home button styling */
+.home-button {
+    margin-top: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.2s ease;
+}
+
+.home-button:hover {
+    transform: scale(1.1);
+}
+
+.home-button img {
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Where's the Water | About Page</title>
+    <link rel="stylesheet" type="text/css" href="about-style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Discover Where's the Water</h1>
+        <p>'Where's the Water' (WTW) is a website designed to help students and visitors locate water fountains across the University of Reading campus. Once you select a marker on the map, you can find information listed about the known water fountains in that building and the closest room to them (or the room they are in in some cases).</p>
+        <p>The colours around each fountain indicate if it's available (<span class="status-green">green</span>), reported/unverified (<span class="status-yellow">yellow</span>) or unavailable (<span class="status-red">red</span>).</p>
+        <button class="home-button" id="home-button" aria-label="Home button">
+            <img src="../assets/home-btn.png" alt="Home button">
+        </button>
+    </div>
+    <script>
+        document.getElementById('home-button').addEventListener('click', function() {
+            window.location.href = '../main/main.html';
+        });
+    </script>
+</body>
+</html>
