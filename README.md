@@ -8,7 +8,7 @@ A user-friendly web application designed to help students and visitors locate wa
 * **Comprehensive Fountain Database:** Find water fountains in libraries, academic buildings, and social spaces.
 * **Detailed Fountain Information:** See specific details for each location, such as:
   * Building name and floor level.
-  * If the fountain is bulit into the wall (wall), plugged in dispenser or in a bathroom.
+  * If the fountain is built into the wall (wall), plugged in dispenser or in a bathroom.
 
 ## Tech Stack
 
