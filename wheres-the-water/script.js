@@ -76,7 +76,7 @@ map.on("popupopen", function (e) {
 const aboutButton = document.getElementById("about-btn");
 if (aboutButton) {
     aboutButton.addEventListener("click", function () {
-        window.location.href = "../about/about.html";
+        window.location.href = "about/about.html";
     });
 } else {
     console.error("About button not found.");
