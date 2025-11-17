@@ -5,7 +5,7 @@ A user-friendly web application designed to help students and visitors locate wa
 ## Features
 
 * **Interactive Campus Map:** A clean, easy-to-navigate map of the University of Reading Whiteknights.
-* **Comprehensive Fountain Database:** Find water fountains in libraries, academic buildings, and social spaces.
+* **Comprehensive Fountain Marker System:** Find water fountains in libraries, academic buildings, and social spaces.
 * **Detailed Fountain Information:** See specific details for each location, such as:
   * Building name and floor level.
   * If the fountain is built into the wall (wall), plugged in dispenser or in a bathroom.
