@@ -23,7 +23,7 @@ function generateFountainList(building) {
 
 // Load buildings data and add markers
 try {
-    const response = await fetch('buildings.json');
+    const response = await fetch('data/buildings.json');
     if (!response.ok) {
         throw new Error('Failed to load buildings data');
     }
